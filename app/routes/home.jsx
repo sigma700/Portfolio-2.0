@@ -331,7 +331,9 @@ export default function Home() {
           Contact Me!
         </button>
         <br />
-        <small className="text-[20px] mt-[30px]">(+254)792624342</small>
+        <small className="text-[20px] mt-[30px] text-center">
+          (+254)792624342
+        </small>
       </div>
       <div className="footer bg-gray-800 mt-[20px] lg:text-center lg:p-[20px]">
         <strong>You can also follow me on all my socials</strong>
