@@ -330,6 +330,8 @@ export default function Home() {
         <button className="w-full p-[10px] bg-gradient-to-r from-lime-500 to-green-500 mt-[30px] lg:w-[200px] rounded-[10px] hover:bg-transparent hover:border-[1px] hover:cursor-pointer hover:scale-[1.03] hover:transition-colors duration-[0.2s] active:scale-[1] hover:shadow hover:shadow-green-600/50">
           Contact Me!
         </button>
+        <br />
+        <small className="text-[20px] mt-[30px]">(+254)792624342</small>
       </div>
       <div className="footer bg-gray-800 mt-[20px] lg:text-center lg:p-[20px]">
         <strong>You can also follow me on all my socials</strong>
