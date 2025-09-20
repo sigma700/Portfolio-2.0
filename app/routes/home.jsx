@@ -535,6 +535,7 @@ export default function Home() {
                 link: "https://www.linkedin.com/in/allan-kirimi-31ba92323/",
               },
               {icon: "/facebook.svg", link: "#"},
+              {icon: "/github.svg", link: "https://github.com/sigma700"},
               {
                 icon: "/instagram.svg",
                 link: "https://www.codewars.com/users/dr_sigma",
