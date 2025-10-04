@@ -51,8 +51,8 @@ export default function Home() {
             src="/Gemini_Generated_Image_g495wxg495wxg495-Photoroom.png"
             alt="Logo"
           />
-
           {/* Desktop Navigation */}
+
           <motion.ul
             initial={{opacity: 0}}
             animate={{opacity: 1}}
@@ -69,7 +69,6 @@ export default function Home() {
               <a href="#projects">Projects</a>
             </li>
           </motion.ul>
-
           {/* Mobile Menu Button */}
           <motion.button
             whileTap={{scale: 0.95}}
@@ -138,7 +137,7 @@ export default function Home() {
           >
             <img
               className="rounded-full w-full h-full object-cover border-4 border-green-500 shadow-lg shadow-green-500/20"
-              src="/IMG_0584 copy-Photoroom.png"
+              src="/Gemini_Generated_Image_iphrc7iphrc7iphr.png"
               alt="Allan"
             />
           </motion.div>
