@@ -150,7 +150,7 @@ export default function Home() {
           >
             <h1 className="text-4xl lg:text-5xl font-bold mb-4">I'm Allan</h1>
             <span className="text-4xl lg:text-6xl font-extrabold bg-gradient-to-r from-lime-300 to-green-500 bg-clip-text text-transparent">
-              Software Developer
+              FullStack Web Developer
             </span>
             <p className="mt-6 text-lg text-gray-300 leading-relaxed">
               I build softwares that actually have emotions embedded into them.
