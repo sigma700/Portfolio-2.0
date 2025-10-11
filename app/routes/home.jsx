@@ -1,5 +1,16 @@
 import {useState} from "react";
 import {motion, AnimatePresence} from "framer-motion";
+import {SiExpress, SiFramer, SiMongodb, SiPostman} from "react-icons/si";
+import {LuGraduationCap} from "react-icons/lu";
+import {
+  FaCode,
+  FaGitAlt,
+  FaHiking,
+  FaLinux,
+  FaNimblr,
+  FaNodeJs,
+  FaReact,
+} from "react-icons/fa";
 
 export function meta() {
   return [
@@ -153,10 +164,9 @@ export default function Home() {
               FullStack Web Developer
             </span>
             <p className="mt-6 text-lg text-gray-300 leading-relaxed">
-              I build softwares that actually have emotions embedded into them.
-              Coding is not just a skill but it's also a tool to streamline the
-              lives of others in what small or big way. Work with me I never
-              disappoint.
+              I design and build stunning websites for my clients , all made
+              possible by converting simple or complex wire frames into clean
+              and logical code.
             </p>
             <motion.button
               whileHover={{scale: 1.05}}
@@ -166,6 +176,196 @@ export default function Home() {
               About Me
             </motion.button>
           </motion.div>
+        </div>
+      </section>
+
+      {/* about me section */}
+
+      {/* About Me Section */}
+      <section id="about" className="py-20 px-6 lg:px-8 bg-gray-900">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            initial={{opacity: 0, y: 20}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{duration: 0.5}}
+            viewport={{once: true}}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">About Me</h2>
+            <p className="text-gray-400 max-w-2xl mx-auto">
+              Passionate full-stack developer with a background in engineering,
+              combining technical expertise with creative problem-solving
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Education */}
+            <motion.div
+              initial={{opacity: 0, x: -30}}
+              whileInView={{opacity: 1, x: 0}}
+              transition={{duration: 0.5, delay: 0.1}}
+              viewport={{once: true}}
+              className="bg-gray-800 p-8 rounded-2xl border border-gray-700"
+            >
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 bg-green-900 bg-opacity-30 rounded-xl flex items-center justify-center">
+                  <div className="w-6 h-6 flex justify-center items-center">
+                    <LuGraduationCap />
+                  </div>
+                </div>
+                <h3 className="text-2xl font-semibold">Education</h3>
+              </div>
+
+              <div className="space-y-6">
+                <div className="border-l-2 border-green-500 pl-4">
+                  <h4 className="text-lg font-medium text-green-400">
+                    Full Stack Web Development
+                  </h4>
+                  <p className="text-gray-300">GoMyCode Kenya</p>
+                  <p className="text-gray-400 text-sm mt-1">
+                    6 Month Intensive Program
+                  </p>
+                  <p className="text-gray-400 text-sm">Completed</p>
+                </div>
+
+                <div className="border-l-2 border-blue-500 pl-4">
+                  <h4 className="text-lg font-medium text-blue-400">
+                    Mechanical Engineering
+                  </h4>
+                  <p className="text-gray-300">Deden Kimathi University</p>
+                  <p className="text-gray-400 text-sm mt-1">
+                    5 Year Degree Program
+                  </p>
+                  <p className="text-gray-400 text-sm">Currently Pursuing</p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Skills */}
+            <motion.div
+              initial={{opacity: 0, y: 30}}
+              whileInView={{opacity: 1, y: 0}}
+              transition={{duration: 0.5, delay: 0.2}}
+              viewport={{once: true}}
+              className="bg-gray-800 p-8 rounded-2xl border border-gray-700"
+            >
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 bg-blue-900 bg-opacity-30 rounded-xl flex items-center justify-center">
+                  <div
+                    className="w-6 h-6 flex justify-center items-center"
+                    alt="Skills"
+                  >
+                    <FaCode />
+                  </div>
+                </div>
+                <h3 className="text-2xl font-semibold">Skills</h3>
+              </div>
+
+              <div className="grid grid-cols-2 gap-4">
+                {[
+                  {name: "MongoDB", icon: <SiMongodb />},
+                  {name: "Express.js", icon: <SiExpress />},
+                  {name: "React.js", icon: <FaReact />},
+                  {name: "Node.js", icon: <FaNodeJs />},
+                  {name: "Git", icon: <FaGitAlt />},
+                  {name: "Linux", icon: <FaLinux />},
+                  {name: "RESTful APIs", icon: <SiPostman />},
+                  {name: "Framer Motion", icon: <SiFramer />},
+                  {name: "Anime.js", icon: <FaNimblr />},
+                ].map((skill, index) => (
+                  <motion.div
+                    key={index}
+                    whileHover={{scale: 1.05}}
+                    className="flex items-center gap-3 p-3 bg-gray-900 rounded-lg border border-gray-700 hover:border-green-400 transition-colors"
+                  >
+                    <div className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center">
+                      <div className="w-4 h-4">{skill.icon}</div>
+                    </div>
+                    <span className="text-sm font-medium">{skill.name}</span>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+
+            {/* Hobbies */}
+            <motion.div
+              initial={{opacity: 0, x: 30}}
+              whileInView={{opacity: 1, x: 0}}
+              transition={{duration: 0.5, delay: 0.3}}
+              viewport={{once: true}}
+              className="bg-gray-800 p-8 rounded-2xl border border-gray-700"
+            >
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 bg-purple-900 bg-opacity-30 rounded-xl flex items-center justify-center">
+                  <div
+                    className="w-6 h-6 flex justify-center items-center"
+                    alt="Hobbies"
+                  >
+                    <FaHiking />
+                  </div>
+                </div>
+                <h3 className="text-2xl font-semibold">Hobbies & Interests</h3>
+              </div>
+
+              <div className="space-y-6">
+                <p className="text-gray-300 leading-relaxed">
+                  I love watching car reviews, Formula One races, and engaging
+                  documentaries. The intersection of technology and automotive
+                  innovation fascinates me.
+                </p>
+
+                <div className="grid grid-cols-2 gap-4">
+                  <motion.div
+                    whileHover={{scale: 1.05}}
+                    className="relative overflow-hidden rounded-lg group"
+                  >
+                    <img
+                      className="w-full h-24 object-cover group-hover:scale-110 transition-transform duration-300"
+                      src="/three-throne-productions-sfeUhgGXrCA-unsplash.jpg"
+                      alt="Formula One"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                      <span className="text-white text-sm font-medium">
+                        Formula One
+                      </span>
+                    </div>
+                  </motion.div>
+
+                  <motion.div
+                    whileHover={{scale: 1.05}}
+                    className="relative overflow-hidden rounded-lg group"
+                  >
+                    <img
+                      className="w-full h-24 object-cover group-hover:scale-110 transition-transform duration-300"
+                      src="/ryno-marais-5Lg-APfDqpQ-unsplash.jpg"
+                      alt="Car Reviews"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                      <span className="text-white text-sm font-medium">
+                        Car Reviews
+                      </span>
+                    </div>
+                  </motion.div>
+
+                  <motion.div
+                    whileHover={{scale: 1.05}}
+                    className="relative overflow-hidden rounded-lg group col-span-2"
+                  >
+                    <img
+                      className="w-full h-24 object-cover group-hover:scale-110 transition-transform duration-300"
+                      src="/documentaries.jpg"
+                      alt="Documentaries"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                      <span className="text-white text-sm font-medium">
+                        Documentaries
+                      </span>
+                    </div>
+                  </motion.div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
@@ -179,7 +379,7 @@ export default function Home() {
             viewport={{once: true}}
             className="text-3xl lg:text-4xl font-bold text-center mb-16"
           >
-            What I Do
+            My services
           </motion.h2>
 
           <motion.div
@@ -239,9 +439,7 @@ export default function Home() {
                   alt="Software Development"
                 />
               </div>
-              <h3 className="text-xl font-semibold mb-4">
-                Software Development
-              </h3>
+              <h3 className="text-xl font-semibold mb-4">Web Development</h3>
               <motion.button
                 whileHover={{scale: 1.05}}
                 whileTap={{scale: 0.95}}
@@ -261,7 +459,7 @@ export default function Home() {
                     className="mt-6 text-gray-300 overflow-hidden"
                   >
                     I hard code the websites according to the specified
-                    conditions and preferences
+                    conditions and preferences by the clients .
                   </motion.p>
                 )}
               </AnimatePresence>
