@@ -14,7 +14,7 @@ import {
 
 export function meta() {
   return [
-    {title: "Allan - Software Developer"},
+    {title: "Allan - Web Developer"},
     {
       name: "description",
       content:
