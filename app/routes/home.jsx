@@ -593,13 +593,19 @@ export default function Home() {
               {
                 title: "EduFind",
                 image: "/Screenshot 2025-09-20 204543.png",
-                tags: ["REACT", "TAILWIND CSS"],
+                tags: ["REACT", "TAILWIND CSS", "Framer-motion"],
                 link: "https://edufind-ryn2.onrender.com/",
               },
               {
                 title: "Protiba",
                 image: "/Screenshot 2025-09-20 203806.png",
-                tags: ["REACT", "Javascript", "NodeJs"],
+                tags: [
+                  "REACT",
+                  "Javascript",
+                  "NodeJs",
+                  "TAILWIND CSS",
+                  "Framer- motion",
+                ],
                 link: "https://protiba.onrender.com/",
               },
               {
@@ -613,6 +619,11 @@ export default function Home() {
                 image: "/Screenshot 2025-09-20 203447.png",
                 tags: ["HTML & CSS", "Javascript"],
                 link: "https://tiktaktoe-game.onrender.com/",
+              },
+              {
+                title: "BrewHaven",
+                image: "/Screenshot 2025-10-22 223907.png",
+                tags: ["ReactJs", "TAILWIND CSS", "Framer-motion"],
               },
               {
                 title: "Tip Calculator For pc",
