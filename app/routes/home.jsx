@@ -168,13 +168,18 @@ export default function Home() {
               possible by converting simple or complex wire frames into clean
               and logical code.
             </p>
-            <motion.button
-              whileHover={{scale: 1.05}}
-              whileTap={{scale: 0.95}}
-              className="mt-8 px-8 py-3 bg-gradient-to-r from-lime-500 to-green-500 rounded-xl font-medium hover:shadow-lg hover:shadow-green-500/30 transition-all duration-300"
+            <a
+              href="https://wa.me/792624342?text=Hello%20I'm%20interested%20in%20your%20services"
+              target="_blank"
             >
-              About Me
-            </motion.button>
+              <motion.button
+                whileHover={{scale: 1.05}}
+                whileTap={{scale: 0.95}}
+                className="mt-8 px-8 py-3 border-[3px] border-green-500 font-extrabold hover:bg-green-500 hover:duration-[0.3s] hover:shadow-lg hover:shadow-green-500/30 transition-colors hover:cursor-pointer duration-75"
+              >
+                Let's Chat
+              </motion.button>
+            </a>
           </motion.div>
         </div>
       </section>
@@ -324,8 +329,8 @@ export default function Home() {
                       src="/three-throne-productions-sfeUhgGXrCA-unsplash.jpg"
                       alt="Formula One"
                     />
-                    <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-                      <span className="text-white text-sm font-medium">
+                    <div className="absolute inset-0 bg-opacity-40 flex items-center justify-center">
+                      <span className="text-white text-sm font-bold">
                         Formula One
                       </span>
                     </div>
@@ -340,8 +345,8 @@ export default function Home() {
                       src="/ryno-marais-5Lg-APfDqpQ-unsplash.jpg"
                       alt="Car Reviews"
                     />
-                    <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-                      <span className="text-white text-sm font-medium">
+                    <div className="absolute inset-0 bg-opacity-40 flex items-center justify-center">
+                      <span className="text-white text-sm font-bold">
                         Car Reviews
                       </span>
                     </div>
@@ -353,11 +358,11 @@ export default function Home() {
                   >
                     <img
                       className="w-full h-24 object-cover group-hover:scale-110 transition-transform duration-300"
-                      src="/documentaries.jpg"
+                      src="/alex-kalligas-mtIt1iLvVws-unsplash.jpg"
                       alt="Documentaries"
                     />
-                    <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-                      <span className="text-white text-sm font-medium">
+                    <div className="absolute inset-0 bg-opacity-40 flex items-center justify-center">
+                      <span className="text-white text-sm font-bold">
                         Documentaries
                       </span>
                     </div>
@@ -576,7 +581,7 @@ export default function Home() {
             <motion.button
               whileHover={{scale: 1.05}}
               whileTap={{scale: 0.95}}
-              className="px-6 py-3 bg-gradient-to-r from-lime-500 to-green-500 rounded-xl font-medium hover:shadow-lg hover:shadow-green-500/30 transition-all duration-300"
+              className="px-6 py-3 border-[3px] border-green-500 font-extrabold hover:bg-green-500 hover:duration-[0.3s] hover:shadow-lg hover:shadow-green-500/30 transition-colors hover:cursor-pointer duration-75"
             >
               See All
             </motion.button>
@@ -695,24 +700,31 @@ export default function Home() {
               software
             </p>
           </motion.div>
-
-          <motion.button
-            whileHover={{scale: 1.05}}
-            whileTap={{scale: 0.95}}
-            className="px-8 py-4 bg-gradient-to-r from-lime-500 to-green-500 rounded-xl font-medium hover:shadow-lg hover:shadow-green-500/30 transition-all duration-300 mb-8"
+          <a
+            href="https://wa.me/792624342?text=Hello%20I'm%20interested%20in%20your%20services"
+            target="_blank"
           >
-            Contact Me!
-          </motion.button>
-
-          <motion.p
-            initial={{opacity: 0}}
-            whileInView={{opacity: 1}}
-            transition={{delay: 0.2, duration: 0.5}}
-            viewport={{once: true}}
-            className="text-xl"
-          >
-            (+254) 792624342
-          </motion.p>
+            <motion.button
+              whileHover={{scale: 1.05}}
+              whileTap={{scale: 0.95}}
+              className="px-8 py-4 border-[2px] border-green-500 font-extrabold hover:bg-green-500 hover:duration-[0.3s] hover:shadow-lg hover:shadow-green-500/30 transition-colors hover:cursor-pointer duration-75 mb-[30px]"
+            >
+              WhatsApp Me !
+            </motion.button>
+          </a>
+          <motion.div>
+            <h2>Or give me a call : </h2>
+            <br />
+            <motion.p
+              initial={{opacity: 0}}
+              whileInView={{opacity: 1}}
+              transition={{delay: 0.2, duration: 0.5}}
+              viewport={{once: true}}
+              className="text-xl"
+            >
+              (+254) 792624342
+            </motion.p>
+          </motion.div>
         </div>
       </section>
 
