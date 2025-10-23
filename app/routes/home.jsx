@@ -629,6 +629,7 @@ export default function Home() {
                 title: "BrewHaven",
                 image: "/Screenshot 2025-10-22 223907.png",
                 tags: ["ReactJs", "TAILWIND CSS", "Framer-motion"],
+                link: "https://brewhaven-qea1.onrender.com/",
               },
               {
                 title: "Tip Calculator For pc",
