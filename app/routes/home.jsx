@@ -728,7 +728,7 @@ export default function Home() {
           >
             You can also follow me on all my socials
           </motion.p>
-
+          {/* added such an irrelevant comment to the codebase */}
           <motion.div
             initial={{opacity: 0, y: 20}}
             whileInView={{opacity: 1, y: 0}}
