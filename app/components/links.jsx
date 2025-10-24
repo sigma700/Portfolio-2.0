@@ -24,7 +24,7 @@ export const Links = () => {
 
 const ClipPathLinks = () => {
   return (
-    <div className="divide-y divide-white border-[3px] border-gray-300">
+    <div className="divide-y divide-white border-[3px] border-neutral-50">
       <div className="grid grid-cols-2 divide-x divide-white">
         <LinkBox Icon={SiGithub} href="https://github.com/sigma700" />
         <LinkBox
@@ -147,7 +147,7 @@ const LinkBox = ({Icon, href}) => {
         style={{
           clipPath: BOTTOM_RIGHT_CLIP,
         }}
-        className="absolute inset-0 grid place-content-center bg-neutral-900 text-green-500"
+        className="absolute inset-0 grid place-content-center bg-green-400 text-black"
       >
         <Icon className="text-xl sm:text-3xl md:text-4xl" />
       </div>
