@@ -11,6 +11,7 @@ import {
   FaNodeJs,
   FaReact,
 } from "react-icons/fa";
+import {Links} from "../components/links";
 
 export function meta() {
   return [
@@ -74,10 +75,13 @@ export default function Home() {
               <a href="#about">About</a>
             </li>
             <li className="hover:text-green-400 transition-colors duration-300">
-              <a href="#contact">Contact</a>
+              <a href="#projects">Projects</a>
             </li>
             <li className="hover:text-green-400 transition-colors duration-300">
-              <a href="#projects">Projects</a>
+              <a href="#testimonials">Testimonials</a>
+            </li>
+            <li className="hover:text-green-400 transition-colors duration-300">
+              <a href="#contact">Contact</a>
             </li>
           </motion.ul>
           {/* Mobile Menu Button */}
@@ -577,14 +581,15 @@ export default function Home() {
                 List of my side and main projects
               </p>
             </motion.div>
-
-            <motion.button
-              whileHover={{scale: 1.05}}
-              whileTap={{scale: 0.95}}
-              className="px-6 py-3 border-[3px] border-green-500 font-extrabold hover:bg-green-500 hover:duration-[0.3s] hover:shadow-lg hover:shadow-green-500/30 transition-colors hover:cursor-pointer duration-75"
-            >
-              See All
-            </motion.button>
+            <a href="https://github.com/sigma700" target="blank">
+              <motion.button
+                whileHover={{scale: 1.05}}
+                whileTap={{scale: 0.95}}
+                className="px-6 py-3 border-[3px] border-green-500 font-extrabold hover:bg-green-500 hover:duration-[0.3s] hover:shadow-lg hover:shadow-green-500/30 transition-colors hover:cursor-pointer duration-75"
+              >
+                See All
+              </motion.button>
+            </a>
           </div>
 
           <motion.div
@@ -683,6 +688,12 @@ export default function Home() {
         </div>
       </section>
 
+      {/* testimonials sections */}
+
+      <section>
+        <div></div>
+      </section>
+
       {/* CTA Section */}
       <section id="contact" className="py-20 px-6 lg:px-8 bg-gray-900">
         <div className="max-w-3xl mx-auto text-center">
@@ -742,38 +753,8 @@ export default function Home() {
             You can also follow me on all my socials
           </motion.p>
           {/* added such an irrelevant comment to the codebase */}
-          <motion.div
-            initial={{opacity: 0, y: 20}}
-            whileInView={{opacity: 1, y: 0}}
-            transition={{duration: 0.5}}
-            viewport={{once: true}}
-            className="flex justify-center gap-8 mb-8"
-          >
-            {[
-              {
-                icon: "/linkedin.svg",
-                link: "https://www.linkedin.com/in/allan-kirimi-31ba92323/",
-              },
-              {icon: "/facebook.svg", link: "#"},
-              {icon: "/github.svg", link: "https://github.com/sigma700"},
-              {
-                icon: "/instagram.svg",
-                link: "https://www.codewars.com/users/dr_sigma",
-              },
-            ].map((social, index) => (
-              <motion.a
-                key={index}
-                href={social.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{scale: 1.2, y: -5}}
-                whileTap={{scale: 0.9}}
-                className="w-12 h-12 bg-gray-900 rounded-xl flex items-center justify-center hover:bg-green-900 hover:bg-opacity-20 transition-colors"
-              >
-                <img className="w-6 h-6" src={social.icon} alt="Social media" />
-              </motion.a>
-            ))}
-          </motion.div>
+
+          <Links />
 
           <motion.p
             initial={{opacity: 0}}
