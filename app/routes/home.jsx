@@ -688,10 +688,101 @@ export default function Home() {
         </div>
       </section>
 
-      {/* testimonials sections */}
+      {/* Testimonials Section */}
+      <section
+        id="testimonials"
+        className="py-24 px-6 lg:px-8 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 relative overflow-hidden"
+      >
+        {/* Subtle Background Glow */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(34,197,94,0.05),transparent_70%)]"></div>
 
-      <section>
-        <div></div>
+        <div className="max-w-7xl mx-auto relative z-10">
+          <motion.div
+            initial={{opacity: 0, y: 30}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{duration: 0.6}}
+            viewport={{once: true}}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+              What My Clients Say
+            </h2>
+            <p className="text-gray-400 max-w-2xl mx-auto">
+              A few words from some of the amazing people and brands I’ve had
+              the pleasure of working with.
+            </p>
+          </motion.div>
+
+          {/* Testimonials Grid */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            variants={{
+              hidden: {opacity: 0},
+              visible: {opacity: 1, transition: {staggerChildren: 0.15}},
+            }}
+            viewport={{once: true}}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
+          >
+            {[
+              {
+                name: "Mercy Mwenda",
+                role: "CEO, Macista Limited",
+                image: "/pexels-andrea-piacquadio-774909.jpg",
+                quote:
+                  "We had agreed that the project would take at least four weeks but surprisingly by the end of the fourth week he had already sent me the application for review . Highly recommend working with him",
+              },
+              {
+                name: "Kevin Mwangi",
+                role: "Founder, Kentech Solutions",
+                image: "/kevin.png",
+                quote:
+                  "Think about someone who does what he says , Allan is your guy . We worked with him on PROTIBA and I was shocked with the kind of seriousness he put in the work . Definitely someone to invest in",
+              },
+              {
+                name: "Amanda Reed",
+                role: "Manager BrewHaven USA",
+                image: "/Screenshot 2025-10-24 165044.png",
+                quote:
+                  "Needed a simple e-commerce application for my coffee shop and he delivered just as I had imagined it . A big thank you ",
+              },
+            ].map((client, index) => (
+              <motion.div
+                key={index}
+                variants={{
+                  hidden: {opacity: 0, y: 30},
+                  visible: {opacity: 1, y: 0},
+                }}
+                transition={{duration: 0.4}}
+                whileHover={{scale: 1.03}}
+                className="bg-gray-900/70 backdrop-blur-lg border border-gray-700 hover:border-green-400 transition-all p-8 rounded-2xl shadow-lg shadow-black/30 flex flex-col items-center text-center"
+              >
+                <img
+                  src={client.image}
+                  alt={client.name}
+                  className="w-24 h-24 rounded-full object-cover border-4 border-green-500 mb-6"
+                />
+                <p className="text-gray-300 italic mb-6 leading-relaxed">
+                  “{client.quote}”
+                </p>
+                <div>
+                  <h4 className="text-lg font-semibold text-white">
+                    {client.name}
+                  </h4>
+                  <p className="text-green-400 text-sm">{client.role}</p>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+
+          <motion.div
+            initial={{scaleX: 0}}
+            whileInView={{scaleX: 1}}
+            transition={{duration: 0.6, ease: "easeOut"}}
+            viewport={{once: true}}
+            className="mt-16 h-[3px] w-32 bg-gradient-to-r from-lime-300 to-green-500 mx-auto rounded-full"
+          ></motion.div>
+        </div>
       </section>
 
       {/* CTA Section */}
