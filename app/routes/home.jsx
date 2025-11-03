@@ -601,12 +601,6 @@ export default function Home() {
           >
             {[
               {
-                title: "EduFind",
-                image: "/Screenshot 2025-09-20 204543.png",
-                tags: ["REACT", "TAILWIND CSS", "Framer-motion"],
-                link: "https://edufind-ryn2.onrender.com/",
-              },
-              {
                 title: "Protiba",
                 image: "/Screenshot 2025-09-20 203806.png",
                 tags: [
@@ -619,6 +613,18 @@ export default function Home() {
                 link: "https://protiba.onrender.com/",
               },
               {
+                title: "BrewHaven",
+                image: "/Screenshot 2025-10-22 223907.png",
+                tags: ["ReactJs", "TAILWIND CSS", "Framer-motion"],
+                link: "https://brewhaven-qea1.onrender.com/",
+              },
+              {
+                title: "EduFind",
+                image: "/Screenshot 2025-09-20 204543.png",
+                tags: ["REACT", "TAILWIND CSS", "Framer-motion"],
+                link: "https://edufind-ryn2.onrender.com/",
+              },
+              {
                 title: "MACISTA LIMITED",
                 image: "/Screenshot 2025-09-20 203520.png",
                 tags: ["REACT", "Javascript", "EXPRESS Js"],
@@ -629,18 +635,6 @@ export default function Home() {
                 image: "/Screenshot 2025-09-20 203447.png",
                 tags: ["HTML & CSS", "Javascript"],
                 link: "https://tiktaktoe-game.onrender.com/",
-              },
-              {
-                title: "BrewHaven",
-                image: "/Screenshot 2025-10-22 223907.png",
-                tags: ["ReactJs", "TAILWIND CSS", "Framer-motion"],
-                link: "https://brewhaven-qea1.onrender.com/",
-              },
-              {
-                title: "Tip Calculator For pc",
-                image: "/Screenshot 2025-05-10 001641.png",
-                tags: ["HTML & CSS", "Javascript"],
-                link: "https://tipclaculator.vercel.app/",
               },
             ].map((project, index) => (
               <motion.div
