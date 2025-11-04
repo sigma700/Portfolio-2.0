@@ -39,7 +39,10 @@ const ClipPathLinks = () => {
           href="https://www.codewars.com/users/dr_sigma"
         />
         <LinkBox Icon={SiTwitch} href="#" />
-        <LinkBox Icon={SiFacebook} href="#" />
+        <LinkBox
+          Icon={SiFacebook}
+          href="https://www.facebook.com/allen.karimi.16/"
+        />
       </div>
       <div className="grid grid-cols-3 divide-x divide-white">
         <LinkBox

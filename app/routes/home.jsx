@@ -519,7 +519,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 px-6 lg:px-8 bg-gray-900">
+      {/* <section className="py-20 px-6 lg:px-8 bg-gray-900">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-8">
           <motion.div
             initial={{opacity: 0, x: -30}}
@@ -562,7 +562,7 @@ export default function Home() {
             ))}
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* Projects Section */}
       <section id="projects" className="py-20 px-6 lg:px-8 bg-gray-800">
