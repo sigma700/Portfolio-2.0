@@ -625,12 +625,6 @@ export default function Home() {
                 link: "https://edufind-ryn2.onrender.com/",
               },
               {
-                title: "Dr Clare",
-                image: "/Screenshot 2025-11-08 113708.png",
-                tags: ["REACT", "TAILWIND CSS", "Framer-motion"],
-                link: "https://www.executiveandleadershipcoach.com/",
-              },
-              {
                 title: "MACISTA LIMITED",
                 image: "/Screenshot 2025-09-20 203520.png",
                 tags: ["REACT", "Javascript", "EXPRESS Js"],
